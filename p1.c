@@ -11,13 +11,11 @@ int main()
 {
     int first_op; //the first operand from the user
     int second_op; // the second operand from the user; not used if squaring or cubing
-    char operator;
-    int result;
+    char operator; //operator choice from user
+    int result; //stores results 
 
     printf("Enter operation:\n");
     scanf("%c", &operator);
-
-    // printf("%c\n",operator);
 
     if (operator == '+')// adds operands
     {
@@ -71,7 +69,7 @@ int main()
         printf("%d\n",result);
     }
 
-    else if (operator == 's') //divides operands, result is floored.
+    else if (operator == 's') //squares first operand
     {
         printf("Enter 1st operand:\n");
         scanf("%d",&first_op);
@@ -81,7 +79,7 @@ int main()
         printf("%d\n",result);
     }
 
-    else if (operator == 'c') //divides operands, result is floored.
+    else if (operator == 'c') //cubes first operand
     {
         printf("Enter 1st operand:\n");
         scanf("%d",&first_op);
